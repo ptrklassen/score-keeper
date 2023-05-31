@@ -1,31 +1,33 @@
-<html>
-    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
-        <link rel="stylesheet" href="index.css">
-    </head>
-    <body>
-        <div class="container">
-            <div class="team">
-                <h3 id="home">HOME</h3>
-                <div id="home-score" class="score"></div>
-                <div id="incrementers">
-                    <button onclick="showButton(this, 'home')" class="increment-btn">+1</button>
-                    <button onclick="showButton(this, 'home')" class="increment-btn">+2</button>
-                    <button onclick="showButton(this, 'home')" class="increment-btn">+3</button>
+<!DOCTYPE html>
+    <html>
+        <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+            <link rel="stylesheet" href="index.css">
+            <title>Scoreboard</title>
+        </head>
+        <body>
+            <div class="container">
+                <div class="team">
+                    <h3 id="home">HOME</h3>
+                    <div id="home-score" class="score"></div>
+                    <div id="incrementers">
+                        <button onclick="showButton(this, 'home')" class="increment-btn">+1</button>
+                        <button onclick="showButton(this, 'home')" class="increment-btn">+2</button>
+                        <button onclick="showButton(this, 'home')" class="increment-btn">+3</button>
+                    </div>
                 </div>
+                <div class="team">
+                    <h3 id="guest">Away</h3>
+                    <div id="guest-score" class="score"></div>
+                    <div id="incrementers">
+                        <button onclick="showButton(this, 'guest')" class="increment-btn">+1</button>
+                        <button onclick="showButton(this, 'guest')" class="increment-btn">+2</button>
+                        <button onclick="showButton(this, 'guest')" class="increment-btn">+3</button>
+                    </div>
+                </div>        
             </div>
-            <div class="team">
-                <h3 id="guest">GUEST</h3>
-                <div id="guest-score" class="score"></div>
-                <div id="incrementers">
-                    <button onclick="showButton(this, 'guest')" class="increment-btn">+1</button>
-                    <button onclick="showButton(this, 'guest')" class="increment-btn">+2</button>
-                    <button onclick="showButton(this, 'guest')" class="increment-btn">+3</button>
-                </div>
-            </div>        
-        </div>
-        <div id="new-game">
-            <button onclick="newGame()" class="new-game-btn">New Game</button>
-        </div>
-        <script src="index.js"></script>
-    </body>
-</html>
+            <div id="new-game">
+                <button onclick="newGame()" class="new-game-btn">New Game</button>
+            </div>
+            <script src="index.js"></script>
+        </body>
+    </html>
